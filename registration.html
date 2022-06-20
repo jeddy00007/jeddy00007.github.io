@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+var x=getElementById('dob').value;
+x.split("/");
+var y=parseInt(x[2]);
+if(y==2021 || y==2020 || y==2022){
+    window.alert("enter valid year entry");
+}
+
+        </script>
+    </head>
+    <body>
+        <div><a href="alpha.html" style="color:crimson">HOME</a></div>
+    <form action="registrationOut.php" method="post">
+        <table  height="100%" width="100%" style="color:blue;" >
+            <tr id="a">
+                <td style="color:blue">firstName</td>
+                <td><input type="text" name="fName" placeholder="omega" required></td>
+            </tr>
+            <tr>
+                <td>middleName</td>
+                <td><input type="text" name="mName" placeholder="Amos" required> </td>
+            </tr>
+            <tr>
+                <td>Surname</td>
+                <td><input type="text" name="sName" placeholder="Lugata" required></td>
+            </tr>
+            <tr>
+                <td>UserName</td>
+                <td><input type="text" name="uName" placeholder="jeddy" required></td>
+            </tr>
+            <tr>
+                <td>DateOfBirth</td>
+                <td><input type="date" name="dob" id="dob" max="2005-12-5" required></td>
+            </tr>
+            <tr>
+                <td>PassWord</td>
+                <td><input type="password" name="pass" value="1234abcd" min="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"></td>
+            </tr>
+            <tr>
+                <td>Curricilum Vitae(CV)</td>
+                <td><input type="file" name="cv" required></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" required pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$"></td>
+            </tr>
+            <tr>
+                <td>Mobile No.</td>
+                <td><input type="searcht" name="pNo" required></td>
+            </tr>
+            <tr>
+                <td>Facebook</td>
+                <td><input type="text" name="facebook"></td>
+            </tr>
+            <tr>
+                <td>Twitter</td>
+                <td><input type="text" name="twitter"></td>
+            </tr>
+            <tr>
+                <td>Instagram</td>
+                <td><input type="text" name="insta"></td>
+            </tr>
+
+        </table>
+        <input type="submit" value="SUBMIT"><br><br><br>
+    </form>
+    </body>
+</html>
